@@ -1,7 +1,11 @@
 const path = "/users/download/index.html"
 
-if(path.slice(-5) == '.html'){
-return true;
-} else {
-return false;
+const isHtml = path => {
+  if(path.slice(-5) == '.html'){
+    return true;
+  } else {
+    return false;
+  }
 }
+
+console.log(isHtml(path));
